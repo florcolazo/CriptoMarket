@@ -1,0 +1,49 @@
+#root {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+    
+}
+
+body{
+    background-color: #fef08a;
+}
+
+.app-background {
+    background-image: url('/src/assets/fondo.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+}
+
+.heading-highlight {
+    color: white;
+    font-size: 3rem;
+    font-weight: 900;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+    background-color: rgba(0, 0, 0, 0.4);
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+}
+
+.cotizacion-style {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 700;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+}
+
+.formulario-text-effect {
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
+    font-weight: 600;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
