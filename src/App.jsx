@@ -5,7 +5,7 @@ import image from './assets/logo-crypto.png'
 import './App.css'
 
 function App() {
-    const [ busqueda, guardarBusqueda ] = useState ({
+    const [ busqueda, guardarBusqueda ] = useState ({ //guarda el valor de la busqueda
     criptomoneda :'',
     moneda: '',
     })
@@ -33,7 +33,7 @@ function App() {
             guardarResultado({})
             return;
         }
-        const url = `https://min-api.cryptocompare.com/data/pricemultifull?fsyms=${criptomoneda}&tsyms=${moneda}`
+        const url = `https://min-api.cryptocompare.com/data/pricemultifull?fsyms=${criptomoneda}&tsyms=${moneda}` 
         const respuesta = await fetch(url)
         const resultado = await respuesta.json()
         if (resultado.DISPLAY && resultado.DISPLAY[criptomoneda] && resultado.DISPLAY[criptomoneda][moneda]) {
@@ -58,7 +58,7 @@ function App() {
 
         <h2 className="heading-highlight text-center lg:text-4xl  md:text-2xl  ">Cotizador de criptomonedas</h2>
         <div className="mt-10 w-6 lg:w-12 m-auto mb-10" >
-            <img className="image-logo-bitcoin rounded-xl" src={image} />
+            
         </div>
         
         <div className='md:flex  m-auto'>
